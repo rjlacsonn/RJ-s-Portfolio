@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | RJ Aaron Lacson</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles1.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+  (function () {
+    emailjs.init("1rMTF_CM09e14cgJ5");
+  })();
+  </script>
+  
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="page">
+    <header class="top-nav-wrap">
+      <nav class="navbar container">
+        <div class="nav-left">
+          <a href="index.html" class="nav-icon" title="Home">
+            <i class="ri-home-4-line"></i>
+          </a>
+
+          <a href="projects.html" class="nav-icon" title="Projects">
+            <i class="ri-briefcase-4-line"></i>
+          </a>
+
+          <a href="about.html" class="nav-icon active" title="About Me">
+            <i class="ri-user-3-line"></i>
+          </a>
+
+          <a href="contact.html" class="nav-icon" title="Contact">
+            <i class="ri-edit-box-line"></i>
+          </a>
+        </div>
+
+        <div class="nav-right">
+          <button class="theme-btn" id="themeToggle" title="Toggle Theme" type="button">
+            <i class="ri-moon-clear-line"></i>
+          </button>
+
+          <button class="hire-btn open-inquiry" type="button">
+            <i class="ri-briefcase-4-line"></i>
+            <span>Hire Me</span>
+          </button>
+
+          <button class="menu-toggle" id="menuToggle" title="Menu" type="button">
+            <i class="ri-menu-3-line"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu container" id="mobileMenu">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="projects.html" class="mobile-link">Projects</a>
+        <a href="about.html" class="mobile-link active">About Me</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <section class="about-card">
+        <div class="about-label">
+          <span class="status-dot"></span>
+          <p>About</p>
+        </div>
+
+        <div class="about-intro-grid">
+          <div class="about-text">
+            <h1>It’s Me, RJ Aaron</h1>
+            <p>
+              I’m a 3rd year Computer Science student who is passionate about
+              learning web development and improving my programming skills. I enjoy
+              creating simple and clean user interfaces, exploring new technologies,
+              and building projects that help me grow as an aspiring developer.
+            </p>
+            <p>
+              Over time, I have been developing my foundation in HTML, CSS,
+              JavaScript, and programming concepts that allow me to understand how
+              modern applications work. I may still be learning, but I am eager to
+              improve step by step and become a more skilled and confident developer.
+            </p>
+          </div>
+
+          <div class="about-image-wrap">
+            <div class="about-image-frame">
+              <img src="rj-about.jpg" alt="RJ Aaron Lacson" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-info-card">
+        <h2>More About Me</h2>
+        <p>
+          What excites me most about technology is how it allows people to create,
+          solve problems, and share ideas in meaningful ways. I enjoy the process of
+          turning simple concepts into something useful, whether it is a website, a
+          small application, or a system project for school.
+        </p>
+        <p>
+          As a student developer, I value continuous learning. I like exploring new
+          ideas, understanding how code works behind the scenes, and improving both
+          the design and functionality of the projects I build. For me, every project
+          is a chance to practice, learn from mistakes, and become better.
+        </p>
+      </section>
+
+      <section class="about-info-card">
+        <h2>Fun Facts About Me</h2>
+        <p>
+          When I am doing tech-related work, I like having a calm and comfortable
+          setup so I can focus better. I usually enjoy listening to music while
+          coding, watching web design inspirations, and trying to improve the little
+          details of a project until it looks cleaner and more presentable.
+        </p>
+        <p>
+          Outside of coding, I also enjoy relaxing, browsing creative ideas online,
+          and spending time on hobbies that help me recharge. I believe balancing
+          productivity and rest is important, especially when learning technology
+          step by step.
+        </p>
+        
+        <div class="fun-facts-grid">
+          <div class="fun-fact-box">
+            <i class="ri-code-s-slash-line"></i>
+            <h3>Favorite Tech Habit</h3>
+            <p>I like improving layouts and making webpages look cleaner and more organized.</p>
+          </div>
+
+          <div class="fun-fact-box">
+            <i class="ri-headphone-line"></i>
+            <h3>While Working</h3>
+            <p>I enjoy listening to music while coding because it helps me stay focused and relaxed.</p>
+          </div>
+
+          <div class="fun-fact-box">
+            <i class="ri-lightbulb-line"></i>
+            <h3>Learning Style</h3>
+            <p>I learn best by practicing directly, testing code, and fixing mistakes one by one.</p>
+          </div>
+
+          <div class="fun-fact-box">
+            <i class="ri-gamepad-line"></i>
+            <h3>Hobbies</h3>
+            <p>During free time, I enjoy relaxing, browsing online, and doing activities that help me recharge.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="social-section">
+            <div class="social-content">
+                <div class="follow-title-wrap">
+                <span class="status-dot"></span>
+                <p class="follow-title">Follow Me</p>
+                </div>
+
+                <div class="social-links">
+                <a href="https://linkedin.com/in/rjlacson" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+                <a href="https://github.com/rjlacsonn" target="_blank" class="social-icon" aria-label="GitHub">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="https://www.tiktok.com/@rjlacsonn" target="_blank" class="social-icon" aria-label="TikTok">
+                    <i class="ri-tiktok-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/rjlacsonn/" target="_blank" class="social-icon" aria-label="Instagram">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                </div>
+            </div>
+        </section>
+
+      <section class="contact-section" id="contact">
+        <h3>Let's work together.</h3>
+        <p>
+          I am currently learning and improving my skills in web development,
+          programming, and building user-friendly applications.
+        </p>
+
+        <div class="contact-buttons">
+          <button class="btn btn-dark open-inquiry" type="button">Hire Me</button>
+          <button class="btn btn-light copy-email" type="button">Copy Email</button>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        © 2026 RJ Aaron Lacson
+      </footer>
+    </main>
+  </div>
+
+  <div class="inquiry-modal" id="inquiryModal">
+  <div class="inquiry-overlay" id="inquiryOverlay"></div>
+
+  <div class="inquiry-box">
+    <button class="close-modal" id="closeModal" type="button" aria-label="Close">
+      <i class="ri-close-line"></i>
+    </button>
+
+    <div class="inquiry-top">
+      <div class="contact-label">
+        <span class="status-dot"></span>
+        <p>Contact</p>
+      </div>
+
+      <div class="availability-badge">AVAILABLE FOR WORK</div>
+    </div>
+
+    <h2>Service Inquiry</h2>
+    <p class="inquiry-subtext">
+      Want to work with me? Let’s get in touch!
+    </p>
+
+    <form class="inquiry-form" id="inquiryForm">
+      <div class="form-row">
+        <input type="text" name="from_name" placeholder="Name" required />
+        <input type="email" name="from_email" placeholder="Email Address" required />
+      </div>
+
+      <div class="form-row single">
+        <input type="tel" name="contact_number" placeholder="Contact Number" required />
+      </div>
+
+      <div class="form-row single">
+        <textarea name="message" placeholder="Message" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
+    </form>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

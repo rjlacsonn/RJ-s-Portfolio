@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | RJ Aaron Lacson</title>
+  <link rel="stylesheet" href="styles.css"/>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("1rMTF_CM09e14cgJ5");
+    })();
+  </script>
+
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- NAVBAR -->
+  <header class="top-nav-wrap">
+    <nav class="navbar container">
+      <div class="nav-left">
+        <a href="index.html" class="nav-icon"><i class="ri-home-4-line"></i></a>
+        <a href="projects.html" class="nav-icon"><i class="ri-briefcase-4-line"></i></a>
+        <a href="about.html" class="nav-icon"><i class="ri-user-3-line"></i></a>
+        <a href="contact.html" class="nav-icon active"><i class="ri-edit-box-line"></i></a>
+      </div>
+
+      <div class="nav-right">
+        <button class="theme-btn" id="themeToggle">
+          <i class="ri-moon-clear-line"></i>
+        </button>
+
+        <button class="hire-btn open-inquiry" type="button">
+          <i class="ri-briefcase-4-line"></i>
+          <span>Hire Me</span>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu container" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="projects.html" class="mobile-link">Projects</a>
+      <a href="about.html" class="mobile-link">About Me</a>
+      <a href="contact.html" class="mobile-link active">Contact</a>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container main-content">
+
+    <!-- CONTACT HEADER -->
+    <section class="contact-section">
+      <h3>Get in touch.</h3>
+      <p>
+        I'm open to opportunities, collaborations, and freelance work.
+        Feel free to reach out anytime.
+      </p>
+    </section>
+
+    <!-- CONTACT INFO -->
+    <section class="projects-section">
+      <div class="projects-grid">
+
+        <!-- EMAIL -->
+        <div class="project-card show">
+          <div class="project-content">
+            <h3>Email</h3>
+            <p>aaron.lacson20@gmail.com</p>
+
+            <div class="project-links">
+              <button class="btn btn-light copy-email">Copy Email</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- LINKEDIN -->
+        <div class="project-card show">
+          <div class="project-content">
+            <h3>LinkedIn</h3>
+            <p>Connect with me professionally</p>
+
+            <div class="project-links">
+              <a href="https://linkedin.com/in/rjlacson" target="_blank">Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- GITHUB -->
+        <div class="project-card show">
+          <div class="project-content">
+            <h3>GitHub</h3>
+            <p>Check out my code and projects</p>
+
+            <div class="project-links">
+              <a href="https://github.com/rjlacsonn" target="_blank">Visit</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- INSTAGRAM -->
+        <div class="project-card show">
+          <div class="project-content">
+            <h3>Instagram</h3>
+            <p>Follow me for updates and content</p>
+
+            <div class="project-links">
+              <a href="https://www.instagram.com/rjlacsonn/" target="_blank">Visit</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="contact-section">
+      <h3>Let's work together.</h3>
+      <p>
+        Want to collaborate or build something together?
+      </p>
+
+      <div class="contact-buttons">
+        <button class="btn btn-dark open-inquiry">Hire Me</button>
+        <button class="btn btn-light copy-email">Copy Email</button>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      © 2026 RJ Aaron Lacson
+    </footer>
+
+  </main>
+</div>
+
+<!-- MODAL (SAME AS OTHER PAGES) -->
+<div class="inquiry-modal" id="inquiryModal">
+  <div class="inquiry-overlay" id="inquiryOverlay"></div>
+
+  <div class="inquiry-box">
+    <button class="close-modal" id="closeModal" type="button">
+      <i class="ri-close-line"></i>
+    </button>
+
+    <div class="inquiry-top">
+      <div class="contact-label">
+        <span class="status-dot"></span>
+        <p>Contact</p>
+      </div>
+
+      <div class="availability-badge">AVAILABLE FOR WORK</div>
+    </div>
+
+    <h2>Service Inquiry</h2>
+    <p class="inquiry-subtext">
+      Want to work with me? Let’s get in touch!
+    </p>
+
+    <form class="inquiry-form" id="inquiryForm">
+      <div class="form-row">
+        <input type="text" name="from_name" placeholder="Name" required />
+        <input type="email" name="from_email" placeholder="Email Address" required />
+      </div>
+
+      <div class="form-row single">
+        <input type="tel" name="contact_number" placeholder="Contact Number" required />
+      </div>
+
+      <div class="form-row single">
+        <textarea name="message" placeholder="Message" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
